@@ -18,6 +18,7 @@ pipeline {
                echo "Check repo"
                sh '''
                echo "checking repo"
+               pwd
                ls -ltr
                '''
             }
