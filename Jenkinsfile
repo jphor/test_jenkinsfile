@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-               git 'https://github.com/jphor/cicd-pipeline-train-schedule-autodeploy.git'
+               git 'https://github.com/jphor/patchwork.git'
             }
         }
         stage('Check') {
