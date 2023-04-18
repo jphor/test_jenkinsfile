@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-               git branch: 'gh-pages', 'https://github.com/jphor/patchwork.git'
+               git branch: 'gh-pages', url: 'https://github.com/jphor/patchwork.git'
             }
         }
         stage('Check') {
