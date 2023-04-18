@@ -8,12 +8,12 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage('SCM") {
+        stage('SCM') {
             steps {
                git 'https://github.com/jphor/cicd-pipeline-train-schedule-autodeploy.git'
             }
         }
-        stage('Check") {
+        stage('Check') {
             steps {
                echo "Check repo"
                sh '''
